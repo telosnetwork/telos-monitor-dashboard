@@ -14,14 +14,14 @@ const { configure } = require('quasar/wrappers');
 
 module.exports = configure(function (/* ctx */) {
   return {
-    eslint: {
+    // eslint: {
       // fix: true,
       // include = [],
       // exclude = [],
       // rawOptions = {},
-      warnings: true,
-      errors: true
-    },
+      // warnings: true,
+      // errors: true
+      // },
 
     // https://v2.quasar.dev/quasar-cli/prefetch-feature
     // preFetch: true,
@@ -55,7 +55,9 @@ module.exports = configure(function (/* ctx */) {
 
     // Full list of options: https://v2.quasar.dev/quasar-cli-vite/quasar-config-js#build
     build: {
-      env: require('dotenv').config().parsed,
+      env: {
+        API_ENDPOINT: process.env.API_ENDPOINT,
+      },
       target: {
         browser: [ 'es2019', 'edge88', 'firefox78', 'chrome87', 'safari13.1' ],
         node: 'node16'
