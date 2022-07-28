@@ -1,0 +1,57 @@
+// app global css in SCSS form
+
+body {
+  color: white;
+  background-color: rgba(36,42,101,0);
+  background-image: url("assets/background.svg");
+}
+h2 span {
+  background: white;
+  color: #1e1345;
+  padding: 0px 19px;
+  border: 3px solid white;
+}
+h2 {
+  border-bottom: 3px solid white;
+  height: 20px;
+  margin-bottom: 50px;
+}
+#filters > .col > .col {
+  margin-top: 5px;
+}
+#filters > .col {
+  margin-bottom: 15px;
+}
+.q-footer {
+  position: relative;
+}
+.q-menu {
+  color: $dark;
+}
+.q-header .q-toolbar {
+  padding: 0;
+}
+.q-header img {
+  width: 150px;
+}
+.q-header.focus {
+  background: rgba(0, 0, 0, 0.75);
+}
+.q-header.closed {
+  transform: translateY(-100px);
+}
+.q-header {
+  transition: 300ms transform ease, 300ms background-color ease;
+  transform: translateY(0);
+  padding: 20px 0px;
+  background: rgba(7, 26, 95, 0.25);
+}
+.container, .q-page-container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.q-page-container {
+  margin-top: 40px;
+ margin-bottom: 100px;
+}
