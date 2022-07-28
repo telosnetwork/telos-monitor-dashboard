@@ -1,6 +1,6 @@
 # Telos Monitor Dashboard (telos-monitor-dashboard)
 
-A Quasar Project using the Telos Monitoring API to display the latest tasks statuses
+A Quasar Project using the Telos Monitor API to display the latest tasks statuses
 
 ## Install the dependencies
 ```bash
