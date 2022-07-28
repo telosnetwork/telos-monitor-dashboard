@@ -1,6 +1,8 @@
 import { defineStore } from 'pinia'
 import axios from "axios"
 
+const ENDPOINT = process.env.API_ENDPOINT;
+
 export const useTaskStore = defineStore('task', {
   state: () => ({
     tasks: [],
@@ -16,15 +18,15 @@ export const useTaskStore = defineStore('task', {
     async fetchTasks() {
       if(this.tasks.length > 0) return;
       try {
-        const response_categories = await axios.get('http://46.101.109.199:3000/task_categories');
+        const response_categories = await axios.get(ENDPOINT + '/task_categories');
         this.categories = response_categories.data;
         this.categories.forEach(category => {
           category.tasks = [];
         })
-        const response = await axios.get('http://46.101.109.199:3000/tasks');
+        const response = await axios.get(ENDPOINT + '/tasks');
         this.tasks = response.data;
         this.tasks.forEach(async task => {
-          let response_status = await axios.get('http://46.101.109.199:3000/task_status?task=eq.' + task.id + '&limit=1&order=id.desc');
+          let response_status = await axios.get(ENDPOINT + '/task_status?task=eq.' + task.id + '&limit=1&order=id.desc');
           task.error = (response_status.data[0].message != "");
           this.categories.forEach(category => {
             if(task.category == category.id){

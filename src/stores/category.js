@@ -1,6 +1,8 @@
 import { defineStore } from 'pinia'
 import axios from "axios"
 
+const ENDPOINT = process.env.API_ENDPOINT;
+
 export const useCategoryStore = defineStore('category', {
     state: () => ({
         categories: []
@@ -13,7 +15,7 @@ export const useCategoryStore = defineStore('category', {
     actions: {
         async fetchCategories() {
             try {
-                const data = await axios.get('http://46.101.109.199:3000/task_categories')
+                const data = await axios.get(ENDPOINT + '/task_categories')
                 this.categories = data.data
             }
             catch (error) {

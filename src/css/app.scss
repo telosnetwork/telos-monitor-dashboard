@@ -1,10 +1,14 @@
-// app global css in SCSS form
-
+// GLOBAL
+.q-menu {
+  color: $dark;
+}
 body {
   color: white;
   background-color: rgba(36,42,101,0);
   background-image: url("assets/background.svg");
 }
+
+// HEADING
 h2 span {
   background: white;
   color: #1e1345;
@@ -16,18 +20,19 @@ h2 {
   height: 20px;
   margin-bottom: 50px;
 }
-#filters > .col > .col {
-  margin-top: 5px;
-}
-#filters > .col {
-  margin-bottom: 15px;
-}
+
+// FOOTER
 .q-footer {
   position: relative;
 }
-.q-menu {
-  color: $dark;
+
+.q-footer img {
+  height: 40px;
+  padding: 8px;
+  margin-top: 3px;
 }
+
+// HEADER
 .q-header .q-toolbar {
   padding: 0;
 }
@@ -46,6 +51,8 @@ h2 {
   padding: 20px 0px;
   background: rgba(7, 26, 95, 0.25);
 }
+
+// CONTAINERS
 .container, .q-page-container {
   max-width: 1200px;
   margin: auto;
@@ -54,4 +61,12 @@ h2 {
 .q-page-container {
   margin-top: 40px;
  margin-bottom: 100px;
+}
+
+// FILTERS
+#filters > .col > .col {
+  margin-top: 5px;
+}
+#filters > .col {
+  margin-bottom: 15px;
 }
