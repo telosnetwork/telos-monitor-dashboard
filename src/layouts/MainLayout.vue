@@ -1,6 +1,5 @@
 <template>
   <q-layout view="hHh lpR fFf">
-
     <q-header elevated class="text-white" :class="showNavbar == false && 'text-white closed' || lastScrollPosition > 0 && 'text-white focus'" height-hint="98">
       <div class="container">
         <q-toolbar>
@@ -30,7 +29,7 @@
         </q-toolbar-title>
 
         <q-tabs align="left">
-          <q-btn type="a" href="" target="_blank" >API</q-btn>
+          <q-btn type="a" :href="apiUrl" target="_blank" >API</q-btn>
           <q-btn type="a" href="https://www.telos.net" target="_blank" >Telos.net</q-btn>
           <q-btn type="a" href="https://github.com/telosnetwork" target="_blank" >Github</q-btn>
         </q-tabs>
