@@ -26,13 +26,19 @@ h2 {
   position: relative;
 }
 
-.q-footer img {
-  height: 40px;
-  padding: 8px;
-  margin-top: 3px;
-}
-
 // HEADER
+.logo {
+  background-image: url("assets/telos.svg");
+  background-position: 50% 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 150px;
+  height: 48.65px;
+}
+.logo.small {
+  width: 90px;
+  height: 24px;
+}
 .q-header .q-toolbar {
   padding: 0;
 }

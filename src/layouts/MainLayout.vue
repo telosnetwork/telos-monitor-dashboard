@@ -5,7 +5,7 @@
       <div class="container">
         <q-toolbar>
           <q-toolbar-title>
-            <a href="/"><img src="src/assets/telos.svg"></a>
+            <a href="/"><div class="logo"></div></a>
           </q-toolbar-title>
           <q-tabs align="left">
             <q-btn type="a" href="http://46.101.109.199:3000/" target="_blank" >API</q-btn>
@@ -26,7 +26,7 @@
       <div class="container">
       <q-toolbar>
         <q-toolbar-title>
-          <a href="https://www.telos.net" target="_blank" title="Visit telos.net" ><img src="src/assets/telos.svg" /></a>
+          <a href="https://www.telos.net" target="_blank" title="Visit telos.net" ><div class="logo small"></div></a>
         </q-toolbar-title>
 
         <q-tabs align="left">
