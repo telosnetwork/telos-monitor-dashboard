@@ -8,7 +8,7 @@
             <a href="/"><div class="logo"></div></a>
           </q-toolbar-title>
           <q-tabs align="left">
-            <q-btn type="a" href="http://46.101.109.199:3000/" target="_blank" >API</q-btn>
+            <q-btn type="a" :href="apiUrl" target="_blank" >API</q-btn>
             <q-btn type="a" href="https://www.telos.net" target="_blank" >Telos.net</q-btn>
             <q-btn type="a" href="https://github.com/telosnetwork" target="_blank" >Github</q-btn>
           </q-tabs>
@@ -45,6 +45,7 @@
   export default {
     data () {
       return {
+        apiURL: process.env.API_ENDPOINT,
         showNavbar: true,
         lastScrollPosition: 0
       }
