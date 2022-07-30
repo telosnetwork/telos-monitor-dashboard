@@ -2,9 +2,9 @@
 
 A Quasar Project using the Telos Monitor API to display the latest tasks statuses
 
-You can find the testnet dashboard hosted here
+You can find the testnet dashboard [hosted here](https://monitor-test.telos.net/#/)
 
-You can find the mainnet dashboard hosted here
+You can find the mainnet dashboard [hosted here](https://monitor.telos.net/#/)
 
 ## Install the dependencies
 ```bash
