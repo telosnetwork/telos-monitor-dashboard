@@ -2,6 +2,10 @@
 
 A Quasar Project using the Telos Monitor API to display the latest tasks statuses
 
+You can find the testnet dashboard hosted here
+
+You can find the mainnet dashboard hosted here
+
 ## Install the dependencies
 ```bash
 yarn
